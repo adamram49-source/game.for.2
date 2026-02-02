@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Two Player Bomb Game</title>
+<link rel="stylesheet" href="style.css">
+<script type="module" src="script.js"></script>
+</head>
+<body>
+<h1>Two Player Bomb Game</h1>
+
+<div class="menu">
+  <button id="createGameBtn">פתח משחק</button>
+  <input type="text" id="codeInput" placeholder="הכנס קוד">
+  <button id="joinGameBtn">הצטרף למשחק</button>
+</div>
+
+<div id="gameContainer" style="display:none;">
+  <h2>Game Code: <span id="gameCodeDisplay"></span></h2>
+  
+  <div class="boards">
+    <div class="player-board" id="player1Board"></div>
+    <div class="player-board" id="player2Board"></div>
+  </div>
+
+  <div class="controls">
+    <button id="chooseBombsBtn">בחר פצצות</button>
+    <button id="attackBtn">בחר התקפה</button>
+  </div>
+
+  <div class="hearts">
+    <p>Player1 Hearts: <span id="player1Hearts">3</span></p>
+    <p>Player2 Hearts: <span id="player2Hearts">3</span></p>
+  </div>
+</div>
+</body>
+</html>
